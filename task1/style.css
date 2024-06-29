@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, Helvetica ;
+    background-color: #002d6b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1555px;
+    height: 808px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #002d6b; /* Ensure background color covers the full area */
+}
+
+.card {
+    background-color: #002d6b;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    width: 65%; /* Adjusted to ensure three cards fit within the container */
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h2 { 
+    font-size: 1.7em;
+    margin: 40px 0;
+    line-height: 1.2;
+}
+
+.card p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.arrow_link::before {
+    content: '➔'; /* Add the arrow character */
+    position: absolute;
+    left: -30px; /* Position the arrow to the left of the text */
+    font-size: 1.0em; /* Adjust the size of the arrow */
+    color: white; /* Arrow color */
+}
